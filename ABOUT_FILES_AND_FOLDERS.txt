@@ -1,0 +1,70 @@
+This file describes about each and every files and folders.
+===========================================================
+
+/ directories
+-------------
+.vscode             - For VS Code Editor Configurations
+.github             - Github Configurations
+scripts             - Automation Process using bash shell and python scripts
+backend             - Django Source Code Directory
+frontend            - React Source Code Directory
+docs                - Documentation Directory
+_dev                - Development process directory
+_dev/ux_ui          - UX/UI Design and Prototype templates directory
+_dev/concept        - Overview and detailed information about each business logic
+
+/ files
+-------
+.editorconfig       - Editor Configurations file
+README.md           - Base file which gives information about entire project
+LICENSE             - Project license template
+Makefile            - Makefile CLI utility for automating project's repeatative tasks
+
+
+/backend/ directories
+---------------------
+venv                - virtualenv for backend (django) (.gitignore)
+requirements        - pip requirements directory
+config              - Base configurations for all backend project;
+                      includes django & 3rd party settings, urls, wsgi & asgi
+<app_dirs>          - based on project requirements apps contains their own files
+
+/backend/ files
+---------------
+manage.py           - django's command line utility
+Makefile            - backend specific make utility
+.gitignore          - backend (python)'s git ignoring file
+.env                - environmental variables file (.gitignore)
+.env.example        - example file shows how to write .env file
+requirements.txt    - base pip requirements file
+
+/frontend/ directories
+----------------------
+node_modules        - containing dependency packages for react (.gitignore)
+public              - build files kept there
+src                 - actual source code for react
+
+/frontend/ files
+----------------
+.gitignore          - frontend (react)'s git ignoring file
+package.json        - npm configuration file
+package-lock.json   - aka package.json; used in collabrative projects.
+
+/docs/ directories
+------------------
+_build              - sphinx builded templates (.gitignore)
+_static             - for presenational and behavioural customization
+_templates          - template theme customization
+contents            - folder for grouping files; name <contents> should be anything
+
+/docs/ files
+------------
+conf.py             - sphinx documentation configuration file
+index.rst           - builds index.html; base for documentation
+make.bat            - windows batch file for automation
+Makefile            - linux make utility file for automation
+
+/scripts/ files
+---------------
+postgres_bootstrap.sh   - recreate db in postgres; delete if already exists then
+                          create fresh one.
